@@ -36,9 +36,9 @@ public class HelloWorldSteps {
     @Autowired
     protected RestTemplate restTemplate;
 
-    @Given("^the client calls /hello-world")
-    public void the_client_issues_GET_hello() {
-        executeGet("http://localhost:8080/hello-world");
+    @Given("^the client calls /products")
+    public void the_client_issues_GET_products() {
+        executeGet("http://localhost:8080/products");
     }
 
     @Then("^the client receives status code of (\\d+)$")
